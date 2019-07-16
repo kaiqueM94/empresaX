@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Barra topo=========================*/
+
+#barra-topo{
+    background-color: #ececec;
+}
+
+#barra-logo{
+    width: 60%;
+    height: 115px;
+    margin: -16px auto;
+    background-color: #ececec;
+    min-width: 800px;
+    max-width: 900px;
+}
+
+.logo{
+    float: left;
+    margin-left: -2%;
+}
+
+/*Menu ======================================*/
+
+#menu ul li{
+    display: inline;
+    line-height: 115px;
+    padding: 6%;
+    font-size: 15px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #696969;
+}
+
+#menu ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ativo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tel{
+    float: right;
+    background-color: #f86a42;
+    font-size: 13pt;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: -50px !important;
+}
+
+/* Slider =========================================*/
+
+ul, ol{
+	list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li img{
+    width: 100%;
+    min-width: 800px;
+    margin-left: -40px;
+}
+
+.paginacao{
+	position: absolute;
+	top: 97%;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    min-width: 800px;
+}
+
+.paginacao li{
+	margin: 2px 5px;
+	cursor: pointer;
+}
+
+.esquerda, .direita{
+	position: absolute;
+	top: 0;
+	color: #fff;
+	font-size: 100px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.esquerda{
+	left: 50px;
+}
+
+.direita{
+    right: 50px;
+}
+
+/*=================================================*/
+
+main{
+    width: 60%;
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 900px;
+}
+
+h1{
+    color: #f86a42;
+}
+
+.foto-empresa{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.txt01{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.txt02{
+    text-align: justify;
+    text-indent: 20px;
+    clear: both;
+}
+
+.saibamais{
+    margin-left: 21%;
+}
+
+.vejaequipe{
+    width: 175px !important; 
+    margin-left: 40%; 
+    margin-bottom: 15px;
+}
+
+.btn{
+    width: 120px;
+    padding: 10px;
+    font-weight: bold;
+    background: #faae00;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #e19d00;
+}
+
+#imagens img{
+    width: 33%;
+    margin-bottom: 15px; 
+}
+
+footer{
+    background-color: #ececec;
+}
+
+#rodape{
+    width: 60%;
+    height: 80px;
+    background-color: #ececec;
+    margin: 0 auto;
+    display: flex;
+    min-width: 800px;
+    max-width: 900px;
+    color: #696969;
+}
+
+.contato{
+    margin-top: 20px;
+    flex-direction: row;
+    width: 200px;
+}
+
+.email{
+    margin-top: 35px;
+    margin-left: 17%;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.fone{
+    width: 130px !important;
+    margin-top: 35px;
+    margin-left: 17%;
+    font-style: italic;
+    font-weight: bold;  
+}
+
+/*medias---------------------------*/
+
+/*----------- 800px-------------*/
+
+@media screen and (max-width: 800px){
+    #menu ul li{
+        padding: 50px;
+    }
+
+    .tel{
+        display: none;
+    }
+
+    main{
+        width: 700px;
+    }
+
+    .foto-empresa{
+        width: 20%;
+    }
+
+    p{
+        font-size: 12px;
+        margin-right: 50px;
+    }
+
+    .contato{
+        width: 170px;
+    }
+}
+
+/*----------- 600px-------------*/
+@media screen and (max-width: 600px){
+    #menu ul li{
+        padding: 30px;
+    }
+
+    .tel, .paginacao{
+       display: none;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 10px;
+        margin-right: 150px;
+    }
+
+    main{
+        width: 500px;
+    }
+
+    .foto-empresa{
+        display: none;
+    }
+
+    .btn{
+        width: 80px;
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .saibamais{
+        margin-left: 35%;
+    }
+
+    .vejaequipe{
+        width: 100px !important;
+        margin-left: 34%;
+    }
+
+    #imagens img{
+        width: 23.50%;
+    }
+
+    .contato{
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+
+
